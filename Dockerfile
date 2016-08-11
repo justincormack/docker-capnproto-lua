@@ -1,8 +1,7 @@
 FROM justincormack/luajit2.1
 RUN \
-  git clone https://github.com/justincormack/capnproto.git && \
+  git clone https://github.com/sandstorm-io/capnproto.git && \
   cd capnproto && \
-  git checkout musl && \
   cd c++ && \
   autoreconf -i && \
   ./configure && \
